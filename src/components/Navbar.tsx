@@ -28,9 +28,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#hero" className="text-xl font-heading font-bold text-foreground">
-          Ankrit<span className="text-primary">Maity</span>
-        </a>
+        { <a href="#hero" className="flex items-center gap-3">
+      <img
+      src="https://pplx-res.cloudinary.com/image/upload/v1748325527/user_uploads/60118782/f46f930a-6ae8-4aee-a535-48ad5e2238b2/1000117275.jpg"
+      alt="CodexCity Logo"
+      className="h-10 w-auto max-w-xs object-contain"
+      style={{ display: 'block', background: 'transparent', filter: isScrolled ? 'grayscale(0)' : 'grayscale(1)' }}
+      />
+</a>
+}
 
         {/* Mobile menu button */}
         <button 
