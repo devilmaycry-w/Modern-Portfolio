@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-foreground/70">
-              © {currentYear} Ankrit Maity x Codexcity - All rights reserved.
+              © {currentYear} realankrit.
             </p>
           </div>
           
