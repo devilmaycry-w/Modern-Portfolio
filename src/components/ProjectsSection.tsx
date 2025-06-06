@@ -1,7 +1,7 @@
-
 import React from 'react';
 
-const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false }) => {
+// Add liveLink to props
+const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false, liveLink }) => {
   return (
     <div className="bg-card rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className={`h-2 ${isFullstack ? 'bg-gradient-to-r from-primary to-purple-500' : 'bg-primary'}`}></div>
@@ -19,7 +19,23 @@ const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false
             </span>
           ))}
         </div>
-        
+
+        {/* LIVE link with blinking green dot */}
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-green-600 font-bold mr-4"
+          >
+            <span className="relative flex h-3 w-3 mr-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            LIVE
+          </a>
+        )}
+
         <a 
           href={githubLink} 
           target="_blank" 
@@ -36,11 +52,20 @@ const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "StoryScape: AI-Powered Storytelling",
+      description: "StoryScape is a mobile-first web app that turns locations into AI-generated, shareable stories—blending history, folklore, and culture with visuals for an immersive experience.",
+      tags: ["Bolt.new", "Supabase", "leaflet.js"],
+      githubLink: "https://github.com/devilmaycry-w/storyscape-voyager-quest",
+      isFullstack: true,
+      liveLink: "https://storyscape.xpensive.me"
+    },
+    {
       title: "Movie Watchlist Platform",
       description: "Developed a Netflix-inspired web app enabling users to search movies, manage watchlists, and share them publicly.",
       tags: ["React", "Tailwind CSS", "Vite", "TMDB API", "Bolt.new"],
       githubLink: "https://github.com/devilmaycry-w/movie-watchlist-platform",
-      isFullstack: true
+      isFullstack: true,
+      liveLink: "https://remarkable-starship-e2d83e.netlify.app"
     },
     {
       title: "Real-Time Messaging App",
@@ -70,6 +95,7 @@ const ProjectsSection = () => {
               tags={project.tags}
               githubLink={project.githubLink}
               isFullstack={project.isFullstack}
+              liveLink={project.liveLink}
             />
           ))}
         </div>
