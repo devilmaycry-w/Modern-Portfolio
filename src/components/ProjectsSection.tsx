@@ -52,6 +52,14 @@ const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "CodexCity - Email Automation Platform",
+      description: "Codexcity is a modern web app that empowers small businesses to automate their mail communication. It makes it easy for users to send professional, personalized emails with integration from SendGrid API—like order confirmation, support replies, and notification—without technical hassle.",
+      tags: ["React", "SendGrid API", "Tailwind CSS", "Supabase"],
+      githubLink: "https://github.com/devilmaycry-w/Email-Automation-0",
+      isFullstack: true,
+      liveLink: "https://codexcity.xpensive.me"
+    },
+    {
       title: "StoryScape: AI-Powered Storytelling",
       description: "StoryScape is a mobile-first web app that turns locations into AI-generated, shareable stories—blending history, folklore, and culture with visuals for an immersive experience.",
       tags: ["Bolt.new", "Supabase", "leaflet.js"],
