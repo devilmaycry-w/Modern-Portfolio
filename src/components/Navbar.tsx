@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 
@@ -28,15 +27,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        { <a href="#hero" className="flex items-center gap-3">
-      <img
-      src="https://pplx-res.cloudinary.com/image/upload/v1748325527/user_uploads/60118782/f46f930a-6ae8-4aee-a535-48ad5e2238b2/1000117275.jpg"
-      alt="CodexCity Logo"
-      className="h-10 w-auto max-w-xs object-contain"
-      style={{ display: 'block', background: 'transparent', filter: isScrolled ? 'grayscale(0)' : 'grayscale(1)' }}
-      />
-</a>
-}
+        <a href="#hero" className="flex items-center gap-3">
+          <img
+            src="https://pplx-res.cloudinary.com/image/upload/v1748325527/user_uploads/60118782/f46f930a-6ae8-4aee-a535-48ad5e2238b2/1000117275.jpg"
+            alt="CodexCity Logo"
+            className="h-10 w-auto max-w-xs object-contain"
+            style={{ display: 'block', background: 'transparent', filter: isScrolled ? 'grayscale(0)' : 'grayscale(1)' }}
+          />
+        </a>
 
         {/* Mobile menu button */}
         <button 
@@ -58,6 +56,7 @@ const Navbar = () => {
           <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">About</a>
           <a href="#projects" className="text-foreground/80 hover:text-primary transition-colors">Projects</a>
           <a href="#skills" className="text-foreground/80 hover:text-primary transition-colors">Skills</a>
+          <a href="/blogs" className="text-foreground/80 hover:text-primary transition-colors">Blog</a>
           <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Contact</a>
           <ThemeToggle />
         </nav>
@@ -86,6 +85,13 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Skills
+              </a>
+              <a 
+                href="/blogs" 
+                className="w-full text-center py-2 text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </a>
               <a 
                 href="#contact" 
