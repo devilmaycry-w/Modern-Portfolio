@@ -55,7 +55,7 @@ const ProjectsSection = () => {
       title: "CodexCity - Email Automation Platform",
       description: "Codexcity is a modern web app that empowers small businesses to automate their mail communication. It makes it easy for users to send professional, personalized emails with integration from SendGrid API—like order confirmation, support replies, and notification—without technical hassle.",
       tags: ["React", "SendGrid API", "Tailwind CSS", "Supabase"],
-      githubLink: "https://github.com/devilmaycry-w/Email-Automation-0",
+      githubLink: "https://github.com/devilmaycry-w/Email-Automation",
       isFullstack: true,
       liveLink: "https://codexcity.xpensive.me"
     },
