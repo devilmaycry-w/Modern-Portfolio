@@ -62,7 +62,7 @@ const ProjectsSection = () => {
     {
       title: "Legacy Vault: Digital Memory Vault",
       description: "To empower individuals to own and organize their digital legacy—notes, credentials, documents, memories—and pass them on with confidence. Legacy is more than a vault; it's a living testament to show your family's journey.",
-      tage: ["React", "Firebase Firestore", "Firebase Auth", "Tailwind CSS"],
+      tags: ["React", "Firebase Firestore", "Firebase Auth", "Tailwind CSS"],
       githubLink: "https://github.com/devilmaycry-w/legacy-vault",
       isFullstack: true,
       liveLink: "https://legacy-memories.netlify.app"
