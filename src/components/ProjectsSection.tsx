@@ -60,6 +60,14 @@ const ProjectsSection = () => {
       liveLink: "https://codexcity.xpensive.me"
     },
     {
+      title: "Legacy Vault: Digital Memory Vault",
+      description: "To empower individuals to own and organize their digital legacy—notes, credentials, documents, memories—and pass them on with confidence. Legacy is more than a vault; it's a living testament to show your family's journey.",
+      tage: ["React", "Firebase Firestore", "Firebase Auth", "Tailwind CSS"],
+      githubLink: "https://github.com/devilmaycry-w/legacy-vault",
+      isFullstack: true,
+      liveLink: "https://legacy-memories.netlify.app"
+    },
+    {
       title: "StoryScape: AI-Powered Storytelling",
       description: "StoryScape is a mobile-first web app that turns locations into AI-generated, shareable stories—blending history, folklore, and culture with visuals for an immersive experience.",
       tags: ["Bolt.new", "Supabase", "leaflet.js"],
