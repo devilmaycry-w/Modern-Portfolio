@@ -12,17 +12,17 @@ const AboutSection = () => {
           <p className="text-lg mb-8 leading-relaxed">
             I'm a passionate Backend developer with experience in Java, Spring Boot, REST APIs, & MySQL. 
             Currently working on side projects where I'm enhancing my skills in backend 
-            development and learning to build scalable, efficient web applications.
+            development, Fast Prototyping, Security, Next Level Designs with AI, and learning to build scalable, efficient web applications.
           </p>
           
           <p className="text-lg mb-8 leading-relaxed">
-            My approach combines technical expertise with creative problem-solving, allowing me to 
+            My approach combines technical expertise with creative problem-solving and context knowledge, allowing me to 
             develop robust solutions that meet both user needs and business requirements.
           </p>
           
           <div className="flex justify-center mt-10">
             <a 
-              href="https://drive.google.com/file/d/1YlEZRK87Oaxcx3g5ucmXJhfyJwIWJdci/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1EkzX3PqN_W0DM_89CJqtJj9wZsl5S3n1/view?usp=drivesdk" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
