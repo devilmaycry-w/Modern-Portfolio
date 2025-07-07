@@ -133,7 +133,24 @@ export const BlogDetail = () => {
               {blog.title}
             </h1>
             <div
-              className="prose prose-lg prose-black max-w-none text-black"
+              className="
+                prose prose-lg prose-black max-w-none text-black
+                [&_pre]:overflow-x-auto
+                [&_pre]:bg-gray-100
+                [&_pre]:rounded-lg
+                [&_pre]:px-3
+                [&_pre]:py-2
+                [&_pre]:my-4
+                [&_pre]:text-sm
+                [&_pre]:whitespace-pre-wrap
+                [&_code]:bg-gray-200
+                [&_code]:px-1
+                [&_code]:rounded
+                [&_code]:break-words
+                [&_mark]:bg-yellow-200
+                [&_mark]:px-1
+                [&_mark]:rounded
+              "
               style={{
                 wordBreak: "break-word",
                 overflowWrap: "break-word",
