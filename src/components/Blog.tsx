@@ -94,83 +94,46 @@ export const BlogDetail = () => {
   const { id } = useParams();
   const blog = blogs.find((b) => b.id === Number(id));
 
-  if (!blog) return <div className="p-8 text-center text-white">Blog not found.</div>;
+  if (!blog) return <div className="p-8 text-center text-black bg-[#FAFAFA]">Blog not found.</div>;
 
   return (
     <>
       <section
-        className="relative min-h-screen py-8 sm:py-12 md:py-20 px-0 sm:px-2 md:px-6 flex items-center justify-center"
+        className="min-h-screen py-8 px-2 sm:px-4 flex items-center justify-center"
         style={{
-          background:
-            "linear-gradient(120deg, rgba(30,41,59,0.95) 0%, rgba(51,65,85,0.90) 100%)",
-          overflow: "hidden",
+          background: "#FAFAFA",
         }}
       >
-        {/* Background shapes */}
-        <div className="pointer-events-none absolute inset-0 z-0">
-          <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-purple-500 opacity-30 rounded-full blur-3xl" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-blue-400 opacity-20 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 w-[30vw] h-[30vw] bg-white opacity-10 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2" />
-        </div>
-        <div className="container mx-auto relative z-10 flex justify-center">
+        <div className="container mx-auto flex justify-center">
           {/* Back/Home buttons */}
-          <div className="fixed top-2 left-2 sm:top-4 sm:left-4 z-20 flex gap-2 sm:gap-3">
+          <div className="fixed top-3 left-3 z-20 flex gap-2">
             <Link
               to="/blogs"
-              className="inline-block font-semibold text-base sm:text-lg px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl transition-colors"
-              style={{
-                background: "rgba(255,255,255,0.18)",
-                backdropFilter: "blur(12px)",
-                WebkitBackdropFilter: "blur(12px)",
-                border: "1.5px solid rgba(255,255,255,0.25)",
-                boxShadow: "0 2px 12px 0 rgba(0,0,0,0.10)",
-                backgroundImage: "linear-gradient(90deg, #fff 0%, #bbb 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
+              className="font-semibold text-base px-3 py-1.5 rounded-lg bg-[#ECECEC] text-[#222] border border-[#DDD] hover:bg-[#E0E0E0] transition"
             >
               ← Back to Blogs
             </Link>
             <Link
               to="/"
-              className="inline-block font-semibold text-base sm:text-lg px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl transition-colors"
-              style={{
-                background: "rgba(255,255,255,0.18)",
-                backdropFilter: "blur(12px)",
-                WebkitBackdropFilter: "blur(12px)",
-                border: "1.5px solid rgba(255,255,255,0.25)",
-                boxShadow: "0 2px 12px 0 rgba(0,0,0,0.10)",
-                backgroundImage: "linear-gradient(90deg, #fff 0%, #bbb 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
+              className="font-semibold text-base px-3 py-1.5 rounded-lg bg-[#ECECEC] text-[#222] border border-[#DDD] hover:bg-[#E0E0E0] transition"
             >
               🏠 Home
             </Link>
           </div>
           <div
-            className="bg-white/10 backdrop-blur-2xl rounded-none sm:rounded-3xl shadow-2xl shadow-black/30 border border-white/20 w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-6 py-4 sm:py-8"
-            style={{
-              boxShadow:
-                "0 8px 32px 0 rgba(31, 38, 135, 0.25), 0 1.5px 6px 0 rgba(80, 80, 160, 0.10)",
-              wordBreak: "break-word",
-              overflowWrap: "break-word",
-              minWidth: "0",
-            }}
+            className="w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-8 py-6 bg-[#FAFAFA] rounded-xl border border-[#E0E0E0] shadow-sm"
           >
             <img
               src={blog.thumbnail}
               alt={blog.title}
-              className="w-full h-44 sm:h-52 md:h-64 object-cover object-center rounded-xl sm:rounded-2xl mb-4 sm:mb-6 shadow-lg shadow-black/20"
-              style={{ filter: "brightness(0.97) saturate(1.1)" }}
+              className="w-full h-44 sm:h-60 object-cover rounded-lg mb-6 border border-[#ECECEC]"
+              style={{ background: "#F5F5F5" }}
             />
-            <h1 className="text-2xl sm:text-3xl font-extrabold mb-2 sm:mb-4 text-white drop-shadow-lg tracking-tight text-center">
+            <h1 className="text-2xl sm:text-3xl font-extrabold mb-2 text-black text-center">
               {blog.title}
             </h1>
             <div
-              className="prose prose-invert max-w-none text-white/90 text-base sm:text-lg break-words"
+              className="prose prose-lg prose-black max-w-none text-black"
               style={{
                 wordBreak: "break-word",
                 overflowWrap: "break-word",
