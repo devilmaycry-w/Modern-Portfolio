@@ -52,9 +52,23 @@ const ProjectCard = ({ title, description, tags, githubLink, isFullstack = false
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Dev-Elevate: Interactive Coding Challenges",
+      description: "Master JavaScript and Python with interactive coding challenges, progressive hints, and real-time feedback in VS Code.",
+      tags: ["Progressive hints", "Real time feedback", "many more feat. soon"],
+      isFullstack: true,
+      liveLink: "https://marketplace.visualstudio.com/items?itemName=DevElevate.develevate"
+    },
+    {
+      title: "ReWear - Sustainable Clothing Community Brand",
+      description: "ReWear is more than just an app—it's a movement to make fashion circular. Built at Odoo Hackathon 2025.",
+      tags: ["React", "Tailwind CSS", "Firebase"],
+      isFullstack: true,
+      liveLink: "https://rewear-clothing-brand.netlify.app/"
+    },
+    {
       title: "CodexCity - Email Automation Platform",
       description: "Codexcity is a modern web app that empowers small businesses to automate their mail communication. It makes it easy for users to send professional, personalized emails with integration from SendGrid API—like order confirmation, support replies, and notification—without technical hassle.",
-      tags: ["React", "SendGrid API", "Tailwind CSS", "Supabase"],
+      tags: ["React", "Gmail API", "Tailwind CSS", "Supabase"],
       githubLink: "https://github.com/devilmaycry-w/Email-Automation",
       isFullstack: true,
       liveLink: "https://codexcity.xpensive.me"
@@ -70,7 +84,7 @@ const ProjectsSection = () => {
     {
       title: "StoryScape: AI-Powered Storytelling",
       description: "StoryScape is a mobile-first web app that turns locations into AI-generated, shareable stories—blending history, folklore, and culture with visuals for an immersive experience.",
-      tags: ["Bolt.new", "Supabase", "leaflet.js"],
+      tags: ["Supabase", "leaflet.js"],
       githubLink: "https://github.com/devilmaycry-w/storyscape-voyager-quest",
       isFullstack: true,
       liveLink: "https://storyscape.xpensive.me"
@@ -78,7 +92,7 @@ const ProjectsSection = () => {
     {
       title: "Movie Watchlist Platform",
       description: "Developed a Netflix-inspired web app enabling users to search movies, manage watchlists, and share them publicly.",
-      tags: ["React", "Tailwind CSS", "Vite", "TMDB API", "Bolt.new"],
+      tags: ["React", "Tailwind CSS", "Vite", "TMDB API"],
       githubLink: "https://github.com/devilmaycry-w/movie-watchlist-platform",
       isFullstack: true,
       liveLink: "https://remarkable-starship-e2d83e.netlify.app"
