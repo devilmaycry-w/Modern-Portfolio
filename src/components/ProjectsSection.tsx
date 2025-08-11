@@ -55,6 +55,7 @@ const ProjectsSection = () => {
       title: "Dev-Elevate: Interactive Coding Challenges",
       description: "Master JavaScript and Python with interactive coding challenges, progressive hints, and real-time feedback in VS Code.",
       tags: ["Progressive hints", "Real time feedback", "many more feat. soon"],
+      githubLink: "https://github.com/devilmaycry-w/develevate",
       isFullstack: true,
       liveLink: "https://marketplace.visualstudio.com/items?itemName=DevElevate.develevate"
     },
