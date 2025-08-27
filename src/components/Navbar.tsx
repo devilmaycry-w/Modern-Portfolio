@@ -27,12 +27,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#hero" className="flex items-center gap-3">
+        <a href="#hero" className="flex items-center gap-3 select-none">
           <img
-            src="https://pplx-res.cloudinary.com/image/upload/v1748325527/user_uploads/60118782/f46f930a-6ae8-4aee-a535-48ad5e2238b2/1000117275.jpg"
-            alt="CodexCity Logo"
-            className="h-10 w-auto max-w-xs object-contain"
-            style={{ display: 'block', background: 'transparent', filter: isScrolled ? 'grayscale(0)' : 'grayscale(1)' }}
+            src="https://i.postimg.cc/ZnVR2RfT/503876135-17842199532515240-7798229834164237904-n.jpg"
+            alt="Profile"
+            className="h-10 w-10 rounded-full object-cover border-2 border-primary shadow"
+            style={{ display: 'block', background: 'transparent', transition: 'filter 0.3s', filter: isScrolled ? 'grayscale(0)' : 'grayscale(1)' }}
           />
         </a>
 
