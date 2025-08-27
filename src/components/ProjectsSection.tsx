@@ -54,7 +54,7 @@ const ProjectsSection = () => {
     {
       title: "Dev-Elevate: Interactive Coding Challenges",
       description: "Master JavaScript and Python with interactive coding challenges, progressive hints, and real-time feedback in VS Code.",
-      tags: ["Progressive hints", "Real time feedback", "many more feat. soon"],
+      tags: ["My First VsCode Extension", "Progressive hints", "Real time feedback"],
       githubLink: "https://github.com/devilmaycry-w/develevate",
       isFullstack: true,
       liveLink: "https://marketplace.visualstudio.com/items?itemName=DevElevate.develevate"
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
     },
     {
       title: "CodexCity - Email Automation Platform",
-      description: "Codexcity is a modern web app that empowers small businesses to automate their mail communication. It makes it easy for users to send professional, personalized emails with integration from SendGrid API—like order confirmation, support replies, and notification—without technical hassle.",
+      description: "Codexcity is a modern web app that empowers small businesses to automate their mail communication. It makes it easy for users to send professional, personalized emails with integration from Gmail API—like order confirmation, support replies, and notification—without technical hassle.",
       tags: ["React", "Gmail API", "Tailwind CSS", "Supabase"],
       githubLink: "https://github.com/devilmaycry-w/Email-Automation",
       isFullstack: true,

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const cn = (...classes: any[]) => classes.filter(Boolean).join(' ');
+const cn = (...classes: any[]) => classes.filter(Boolean).join(" ");
 
 interface DotPatternProps {
   width?: any;
@@ -55,81 +55,146 @@ const DotPattern: React.FC<DotPatternProps> = ({
 
 const HeroSection: React.FC = () => {
   return (
-    <section 
-      id="hero" 
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden"
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 relative overflow-hidden bg-black"
     >
+      {/* Indigo Cosmos Background with Top Glow */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.25), transparent 70%), #000000",
+        }}
+      />
+
       {/* Subtle dot grid background */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-30 z-0 mix-blend-screen">
         <DotPattern width={40} height={40} cx={20} cy={20} cr={0.5} />
       </div>
-      
+
       {/* Animated corner dots */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-4 left-4 w-2 h-2 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
-        <div className="absolute top-4 right-4 w-2 h-2 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
-        <div className="absolute bottom-4 left-4 w-2 h-2 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
-        <div className="absolute bottom-4 right-4 w-2 h-2 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.8s' }} />
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div
+          className="absolute top-4 left-4 w-2 h-2 bg-white rounded-full animate-pulse"
+          style={{ animationDelay: "0.2s" }}
+        />
+        <div
+          className="absolute top-4 right-4 w-2 h-2 bg-white rounded-full animate-pulse"
+          style={{ animationDelay: "0.4s" }}
+        />
+        <div
+          className="absolute bottom-4 left-4 w-2 h-2 bg-white rounded-full animate-pulse"
+          style={{ animationDelay: "0.6s" }}
+        />
+        <div
+          className="absolute bottom-4 right-4 w-2 h-2 bg-white rounded-full animate-pulse"
+          style={{ animationDelay: "0.8s" }}
+        />
       </div>
 
+      {/* Hero Content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="relative border border-white/20 rounded-3xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-2xl overflow-hidden">
+        <div
+            className={cn(
+              "relative rounded-3xl overflow-hidden backdrop-blur-xl transition-all duration-500",
+              "bg-gradient-to-br from-white/5 to-white/10 border border-white/10"
+            )}
+        >
           {/* Frame dots pattern */}
           <div className="absolute inset-0">
-            <DotPattern width={20} height={20} cx={10} cy={10} cr={0.75} className="opacity-30" />
+            <DotPattern
+              width={20}
+              height={20}
+              cx={10}
+              cy={10}
+              cr={0.75}
+              className="opacity-30"
+            />
           </div>
-          
+
           {/* Corner accents */}
           <div className="absolute top-3 left-3 w-2 h-2 bg-white rounded-full" />
           <div className="absolute top-3 right-3 w-2 h-2 bg-white rounded-full" />
           <div className="absolute bottom-3 left-3 w-2 h-2 bg-white rounded-full" />
           <div className="absolute bottom-3 right-3 w-2 h-2 bg-white rounded-full" />
 
+          {/* Hero Text with subtle Violet Storm background */}
           <div className="relative z-20 py-16 px-6 sm:py-20 sm:px-12 text-center">
-            <p className="text-sm sm:text-base text-white/70 mb-2 tracking-widest animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-              HELLO, I'M
-            </p>
-            
-            <div className="mb-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
-                <span 
-                  className="inline-block animate-fade-in opacity-0 font-argent"
-                  style={{ 
-                    animationDelay: '0.4s',
-                    letterSpacing: '0.5px'
-                  }}
-                >
-                  Ankrit Maity
-                </span>
-              </h1>
-            </div>
-             
-            <div className="max-w-2xl mx-auto">
-              <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 leading-relaxed animate-fade-in opacity-0" style={{ animationDelay: '0.8s' }}>
-                <span className="font-medium text-white">Java Backend Specialist</span> crafting robust, scalable solutions with modern frameworks.
-                <br />
-                <span className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-teal-500 to-blue-600 animate-gradient">
-                  Vibe Coding & Prompt Engineering for fast pace world.
-                </span>
-              </p>
-            </div>
-            
-            <div className="animate-fade-in opacity-0" style={{ animationDelay: '1s' }}>
-              <a 
-                href="#contact"
-                className="inline-flex items-center px-8 py-3.5 bg-white text-gray-900 rounded-lg hover:bg-white/90 transition-all duration-300 font-medium tracking-wide shadow-lg hover:shadow-xl"
+            {/* Subtle Violet Storm Glow */}
+            <div
+              className="absolute inset-0 z-0 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.18), transparent 70%)",
+                opacity: 0.7,
+              }}
+            />
+            <div className="relative z-10">
+              <p
+                className="text-sm sm:text-base text-white/70 mb-2 tracking-widest animate-fade-in opacity-0"
+                style={{ animationDelay: "0.2s" }}
               >
-                Get In Touch
-                <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
+                HELLO, I'M
+              </p>
+
+              <div className="mb-6">
+  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+    <span
+      className="inline-block animate-fade-in opacity-0 font-argent text-white"
+      style={{ animationDelay: "0.4s", letterSpacing: "0.5px" }}
+    >
+      Ankrit Maity
+    </span>
+  </h1>
+</div>
+
+
+
+              <div className="max-w-2xl mx-auto">
+                <p
+                  className="text-lg sm:text-xl md:text-2xl text-white/80 mb-8 leading-relaxed animate-fade-in opacity-0"
+                  style={{ animationDelay: "0.8s" }}
+                >
+                  <span className="font-medium text-white/80">
+                    From building robust <span className="font-bold">Java backend projects</span> to designing
+                    complete full-stack experiences.
+                  </span>
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div
+                className="animate-fade-in opacity-0"
+                style={{ animationDelay: "1s" }}
+              >
+                <a
+                  href="#contact"
+                  className="inline-flex items-center px-8 py-3.5 bg-white text-gray-900 rounded-lg hover:bg-white/90 transition-all duration-300 font-medium tracking-wide shadow-lg hover:shadow-xl"
+                >
+                  Get In Touch
+                  <svg
+                    className="w-5 h-5 ml-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <style>{`
+  <style>{`
         @font-face {
           font-family: 'Argent CF';
           src: url('/fonts/ArgentCF-Regular.woff2') format('woff2'),
@@ -163,16 +228,14 @@ const HeroSection: React.FC = () => {
           animation: pulse 2s ease-in-out infinite;
         }
 
-        @keyframes gradient-shift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient-shift 6s ease infinite;
-        }
+          /* Nebula gradient effect for hero text */
+          .nebula-gradient-text {
+            background: linear-gradient(90deg, #7f5af0 0%, #00cfff 40%, #ff6ac1 80%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+          }
       `}</style>
     </section>
   );

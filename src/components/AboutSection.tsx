@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
         
-        <div className="max-w-3xl mx-auto">
+        {/* <div className="max-w-3xl mx-auto">
           <p className="text-lg mb-8 leading-relaxed">
             I'm a passionate Backend developer with experience in Java, Spring Boot, REST APIs, & MySQL. 
             Currently working on side projects where I'm enhancing my skills in backend 
@@ -18,8 +18,21 @@ const AboutSection = () => {
           <p className="text-lg mb-8 leading-relaxed">
             My approach combines technical expertise with creative problem-solving and context knowledge, allowing me to 
             develop robust solutions that meet both user needs and business requirements.
-          </p>
+          </p> */}
           
+          <div className="max-w-3xl mx-auto">
+  <p className="text-lg mb-8 leading-relaxed">
+    I’m a backend-focused full-stack developer passionate about building scalable, efficient applications that solve real-world, consumer-centric problems.
+  </p>
+
+  <p className="text-lg mb-8 leading-relaxed">
+    I specialize in Java, MySQL, Spring Boot, and REST APIs, with a strong focus on designing robust backend systems. Alongside backend development, I’ve explored and applied cloud-based Backend-as-a-Service (BaaS) solutions like Supabase and Firebase to streamline development and enhance scalability.
+  </p>
+
+  <p className="text-lg mb-8 leading-relaxed">
+    On the frontend, I create clean, engaging user interfaces to deliver seamless end-to-end experiences, bringing together both functionality and design for complete full-stack solutions.
+  </p>
+
           <div className="flex justify-center mt-10">
             <a 
               href="https://drive.google.com/file/d/1EkzX3PqN_W0DM_89CJqtJj9wZsl5S3n1/view?usp=drivesdk" 

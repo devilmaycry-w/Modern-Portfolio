@@ -47,7 +47,8 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 px-4 md:px-6">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+        <h2 className="text-1xl font-bold mb-10 text-center">Doesn't matter if your idea is <small>small</small> or <big>Big</big>.</h2>
+        <p className="text-1xl font-bold text-center">Let's Connect!</p>
 
         <div className="max-w-md mx-auto">
           {isSuccess && (
